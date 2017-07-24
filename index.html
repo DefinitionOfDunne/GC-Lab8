@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>New Shopping List App</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<header>
+	<div class="container">
+		<h1>Shopping List</h1>
+		<div class="logo">
+		<img src="images/cart.png">
+		</div>
+		<h3>Created by Dylan Dunne</h3>
+		</div>
+	</header>
+
+	<section>
+		<div class="container">
+			<div id="add-section">
+				<h2>What Do You Need?</h2>
+				<button id="add-button" name="add-button" onclick="addNewItem()">Click To Add Item</button>
+		
+			<input id="input-items" type="text" name="inputbox" placeholder='Type Item Here!'>
+			<input id="input-price" name="inputbox" value="input" placeholder='Price Here (ex: 3.50)'>
+			</form>
+			</div>
+			<br>
+		<div class=".cart-section">
+			<h2>Your List</h2>
+			<h4>Click The Item To Cross It Out!</h4>
+			<ul id="active-items">
+			</ul>
+			<div>
+				<p id='total'></p>
+			</div>
+		</div>
+		<div class="button-options">
+			<button id="clear-button" name="reset" onclick="clearList()"> Clear Your List </button>
+			
+		</div>
+		</div>
+	</section>
+	<footer>
+	</footer>
+	<script src="js/app.js"></script>
+</body>
+</html>
